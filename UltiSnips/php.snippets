@@ -265,10 +265,26 @@ endsnippet
 
 snippet jsb
 <?php DebutJavascript(); ?>
-$0
+<script type="text/javascript">
+	$(function() {
+		$0
+	});
+</script>
 <?php FinJavascript(); ?>
 endsnippet
 
+snippet dc
+<?=DebutBoiteContenu($0)?>
+endsnippet
 
+snippet fc
+<?=FinBoiteContenu()?>
+endsnippet
+
+snippet fl
+<?php for ($i = 1; $i <= COUNT_LANGUE; ++$i) { ?>
+	$0
+<?php } ?>
+endsnippet
 
 # :vim:ft=snippets:
